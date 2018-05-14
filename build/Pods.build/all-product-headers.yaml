@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/user/Documents/ReactiveApp/build/Debug-iphonesimulator/Pods_ReactiveApp.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-ReactiveApp-umbrella.h",
+          'external-contents': "/Users/user/Documents/ReactiveApp/Pods/Target Support Files/Pods-ReactiveApp/Pods-ReactiveApp-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_ReactiveApp-Swift.h",
+          'external-contents': "/Users/user/Documents/ReactiveApp/build/Debug-iphonesimulator/Pods_ReactiveApp.framework/Headers/Pods_ReactiveApp-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/user/Documents/ReactiveApp/build/Debug-iphonesimulator/Pods_ReactiveApp.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/user/Documents/ReactiveApp/build/Pods.build/Debug-iphonesimulator/Pods-ReactiveApp.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let searchResults = searchBar.rx.text.orEmpty
+            .throttle(0.3, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest { query -> Observable<[Repository]> in
+                if query.isEmpty {
+                    return .just([])
+                }
+                return searchGitHub(query)
+                    .catchErrorJustReturn([])
+            }
+            .observeOn(MainScheduler.instance)
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "4a83f396c237ae84d821f27194b3e39d"
+build_time: [1526262199, 317512000]
+inputs:
+  "/Users/user/Documents/ReactiveApp/ReactiveApp/ViewController.swift": !dirty [1526262052, 0]
+  "/Users/user/Documents/ReactiveApp/ReactiveApp/AppDelegate.swift": !dirty [1526245029, 0]
